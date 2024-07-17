@@ -17,16 +17,16 @@ jobs:
       - eb/setup
       - checkout
       - run:
-          name: Install Front-End
+          name: Install Front-End Dependencies
           command: |
             echo $(node --version)
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
       - run:
-          name: Install API
+          name: Install Backend Dependencies
           command: |
-            echo "TODO: Install dependencies in the the backend API  "
+            echo "TODO: Install dependencies in the the backend API "
             npm run backend:install
       - run:
           name: Front-End Lint
@@ -52,7 +52,7 @@ jobs:
     docker:
       - image: 'cimg/node:14.15'
         environment:
-          NODE_VERSION: 14.15
+          node-version: "14.15"
     steps:
       - node/install:
           node-version: '14.15'
