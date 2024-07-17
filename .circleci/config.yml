@@ -17,14 +17,14 @@ jobs:
       - eb/setup
       - checkout
       - run:
-          name: Install Front-End Dependencies
+          name: Install Front-End
           command: |
             echo $(node --version)
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
       - run:
-          name: Install API Dependencies
+          name: Install API
           command: |
             echo "TODO: Install dependencies in the the backend API  "
             npm run backend:install
