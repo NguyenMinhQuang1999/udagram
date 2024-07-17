@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: 'cimg/node:14.15'
+      - image: "cimg/base:stable"
     steps:
       - node/install:
           node-version: '14.15'
