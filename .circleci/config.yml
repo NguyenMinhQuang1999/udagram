@@ -73,7 +73,7 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - develop
           type: approval
           requires:
             - build

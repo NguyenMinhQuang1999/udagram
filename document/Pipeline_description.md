@@ -36,3 +36,6 @@ Hold the build of `main` branch to get approval. After the build is approved, ru
 - Configure AWS Access Key ID
 - Setting up Elastic Beanstalk
 - Deploy App
+
+
+![Pipeline ](pipeline.PNG)
