@@ -60,7 +60,7 @@ jobs:
       - run:
           name: EB set env
           command: |
-            npm run backend:setup-env
+            npm run backend:setup
       - aws-cli/setup
       - checkout
       - run:
