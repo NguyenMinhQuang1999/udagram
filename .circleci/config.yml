@@ -57,10 +57,6 @@ jobs:
       - node/install:
           node-version: '14.15'
       - eb/setup
-      - run:
-          name: EB set env
-          command: |
-            npm run backend:setup
       - aws-cli/setup
       - checkout
       - run:
